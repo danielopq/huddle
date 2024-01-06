@@ -151,6 +151,11 @@ body > div{
 	width: 420px;
 }
 
+.content-img-right-size{
+	text-align: right;
+	display: block;
+}
+
 .text-header{
 	font-family: 'Poppins';
 }
