@@ -1,3 +1,135 @@
 @charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap');
 /* CSS Document */
+
+:root{
+--Pink: hsl(322, 100%, 66%);
+--VeryPaleCyan: hsl(193, 100%, 96%);
+--VeryDarkCyan: hsl(192, 100%, 9%);
+--GrayishBlue: hsl(208, 11%, 55%);
+}
+
+input[type="button"]{
+	border:none;
+	font: 700 14px 'Open Sans';
+}
+
+img{
+	display:block;
+}
+
+body{
+	width: 100vw;
+	height: 100vh;
+	margin: 0px;
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+body > div{
+	width: inherit;
+}
+
+#header{
+	height: 720px;
+	background: var(--VeryPaleCyan) url("../images/bg-hero-desktop.svg") no-repeat;
+	background-size:auto;
+}
+
+#top-header{
+	width: 100%;
+	height: 120px;
+	display:flex;
+	flex-direction: row;
+}
+
+#top-header-logo{
+	width: 50%;
+}
+
+#top-header-logo > img{
+	width: 200px;
+	margin-left: 160px;
+	margin-top: 60px;
+}
+
+#top-header-bt{
+	width: 50%;
+	text-align: right;
+}
+
+#bt-try{
+	width: 200px;
+	height: 50px;
+	margin-top: 50px;
+	margin-right: 80px;
+	border-radius: 25px;
+	color: black;
+	background-color: white;
+}
+
+#body-header{
+	width: 100%;
+	height: 600px;
+	display: flex;
+	flex-direction: row;
+}
+
+#body-header-content{
+	width: 50%;
+	display:flex;
+	flex-direction: column;
+	align-items:center;
+}
+
+#body-header-content-text{
+	width: 530px;
+	height: 300px;
+	margin-top: 100px;
+}
+
+#body-header-content-bt{
+	width: 530px;
+}
+
+#getStarted-bt{
+	width: 280px;
+	height: 55px;
+	border-radius: 40px;
+	marging-left:auto;
+}
+
+#body-header-img{
+	width: 50%;
+}
+
+#body-header-img > img{
+	width: 680px;
+	margin-top: 45px;
+}
+
+#content{
+	height: 800px;
+}
+
+#footer{
+	height: 560px;
+	background-color: var(--VeryDarkCyan);
+}
+
+.text-header{
+	font-family: 'Poppins';
+}
+
+.text-content{
+	font-family: 'Open Sans';
+	font-weight: 400;
+}
+
+.pink-button{
+	background-color: var(--Pink);
+	color:white;
+}
 
