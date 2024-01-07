@@ -432,17 +432,17 @@ body > div{
 
 
 #content{
-	height: 1900px;
+	height: 2200px;
 	display:flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content:flex-start;
 	align-items: center;
 	margin-top: 50px;
 }
 
 #content > div{
 	width: 420px;
-	height: 900px;
+	height: 600px;
 	justify-content:center;
 	margin-bottom: 50px;
 	padding-right: 0px;
@@ -476,5 +476,30 @@ body > div{
 	text-align: center;
 }
 
+/*####################### READY-TO-BUILD #######################*/
+
+
+#readyToBuild{
+	width: 410px;
+	height: 200px;
+	top: 3140px;
+}
+
+#readyToBuild > p {
+	margin-top: 40px;
+	margin-bottom: 40px;
+	font: 20px 'Poppins';
+} 
+
+#readyToBuild > [type="button"]{
+	width: 220px;
+	height: 40px;
+	border-radius: 20px;
+	font-size: 12px;
+} 
+
+
+
+/*####################### FOOTER #######################*/
 }
 
