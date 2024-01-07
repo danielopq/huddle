@@ -150,13 +150,24 @@ body > div{
 	width: 1235px;
 	height: 440px;
 	display:flex;
-	flex-direction: row;
 	align-items: center;
 	justify-content:flex-end;
 	margin-bottom: 35px;
 	border-radius: 12px;
 	box-shadow: 0px 0px 20px -10px grey;
 	padding-right: 30px;
+}
+
+#content-grow{
+	flex-direction: row;
+}
+
+#content-conversations{
+	flex-direction: row;
+}
+
+#content-users{
+	flex-direction: row;
 }
 
 .content-column{
@@ -415,6 +426,54 @@ body > div{
 #body-header-img > img{
 	width: 430px;
 	margin-top: 70px;
+}
+
+/*####################### CONTENT #######################*/
+
+
+#content{
+	height: 1900px;
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 50px;
+}
+
+#content > div{
+	width: 420px;
+	height: 900px;
+	justify-content:center;
+	margin-bottom: 50px;
+	padding-right: 0px;
+}
+	
+#content-grow{
+	flex-direction: column-reverse;
+}
+
+#content-conversations{
+	flex-direction: column;
+}
+
+#content-users{
+	flex-direction: column-reverse;
+}
+
+.content-column{
+	width: 340px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	margin-top: 30px;
+}
+
+.content-img{
+	width: 280px;
+}
+
+.content-img-right-size{
+	text-align: center;
 }
 
 }
