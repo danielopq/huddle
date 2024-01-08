@@ -236,7 +236,6 @@ body > div{
 }
 
 #footer > div {
-	height:330px;
 	margin-top: 190px;
 }
 
@@ -260,14 +259,25 @@ body > div{
 
 #col-two{
 	width: 230px;
+	height:330px;
+}
+
+#aboutUs{
+	margin-top: 80px;
 }
 
 #col-three{
 	width: 200px;
+	height:330px;
+}
+
+#career{
+	margin-top: 80px;
 }
 
 #col-four{
 	width: 370px;
+	height:330px;
 	display:block;
 	text-align: center;
 }
@@ -482,7 +492,7 @@ body > div{
 #readyToBuild{
 	width: 410px;
 	height: 200px;
-	top: 3140px;
+	top: 3100px;
 }
 
 #readyToBuild > p {
@@ -498,8 +508,72 @@ body > div{
 	font-size: 12px;
 } 
 
-
-
 /*####################### FOOTER #######################*/
+
+
+#footer{
+	height: 800px;
+	flex-direction: column;
+	justify-content: flex-start;
+	padding-top: 150px;
+}
+
+#footer > div {
+	margin-top: 0px;
+}
+	
+@supports (mask: url("")) {
+#col-one-logo{
+    mask-size:200px;
+  }
+}
+
+#col-one{
+	margin-left: 20px;
+}
+#col-two{
+	height: 132px;
+	margin-left: 20px;
+}
+
+#aboutUs{
+	margin-top: 15px;
+}
+	
+#col-three{
+	height: 132px;
+	margin-left: 20px;
+	margin-bottom: 50px;
+}
+#career{
+	margin-top: 15px;
+}
+
+#col-four{
+	align-self: center;
+	height: 100px;
+	text-align: center;
+}
+
+#media{
+	margin-top: 10px;
+}
+
+#copyRight{
+	margin-top: 30px;
+	text-align: center;
+}
+
+.col-one-icon{
+	margin-top: 7px;
+}
+
+.col-one-text{
+	font: 400 20px 'Open Sans';
+}
+
+.link{
+	text-align: left;
+}
 }
 
