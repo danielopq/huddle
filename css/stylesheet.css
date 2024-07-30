@@ -48,6 +48,7 @@ a:hover {
 input[type="button"] {
 	border: none;
 	font: 700 14px 'Open Sans';
+	padding-top: 3px;
 	cursor: pointer;
 }
 
@@ -66,9 +67,9 @@ p {
 /*####################### HEADER #######################*/
 
 header {
-	height: 741px;
+	height: 730px;
 	background: var(--VeryPaleCyan) url("../images/bg-hero-desktop.svg") no-repeat;
-	padding: 48px 80px 0px;
+	padding: 48px 0px 0px 80px;
 }
 
 #top-header {
@@ -80,19 +81,18 @@ header {
 	justify-content: space-between;
 }
 
-#top-header-logo>img {
+#top-header-logo {
+	height: 31px;
 	width: 200px;
-}
-
-#top-header-bt {
-	width: 200px;
+	background: url('../images/logo.svg') center/200px 31px;
+	
 }
 
 #bt-try {
-	width: inherit;
-	height: 50px;
+	width: 200px;
+	height: 48px;
 	border-radius: 24px;
-	color: black;
+	color: var(--VeryDarkCyan);
 	background-color: white;
 	box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.0954);
 
@@ -117,6 +117,7 @@ header {
 }
 
 #header-body-content {
+	height: 321px;
 	width: 536px;
 	display: flex;
 	flex-direction: column;
@@ -144,12 +145,12 @@ header {
 	height: 56px;
 	border-radius: 28px;
 	box-shadow: 0px 3px 11px rgba(255, 82, 193, 0.16);
-
 }
 
 #header-body-img {
 	width: 680px;
-	background: url('../images/illustration-mockups.svg') left/680px 482px;
+	height: 482px;
+	background: url('../images/illustration-mockups.svg') center/690px 492px no-repeat;
 }
 
 
