@@ -11,7 +11,7 @@
 
 /*####################### GENERAL #######################*/
 
-*{
+* {
 	box-sizing: border-box;
 }
 
@@ -57,7 +57,7 @@ h1 {
 	font: 600 40px/60px 'Poppins';
 }
 
-p{
+p {
 	margin: 0px;
 	padding: 0px;
 }
@@ -112,7 +112,7 @@ header {
 	justify-content: space-between;
 }
 
-#header-body >div{
+#header-body>div {
 	height: 482px;
 }
 
@@ -123,7 +123,7 @@ header {
 	align-items: center;
 }
 
-#header-body-content > div{
+#header-body-content>div {
 	width: inherit;
 }
 
@@ -135,7 +135,7 @@ header {
 	justify-content: space-between;
 }
 
-#header-body-getStartedBt{
+#header-body-getStartedBt {
 	margin-top: 32px;
 }
 
@@ -143,7 +143,7 @@ header {
 	width: 280px;
 	height: 56px;
 	border-radius: 28px;
-	box-shadow: 0px 3px 11px rgba(255,82,193,0.16);
+	box-shadow: 0px 3px 11px rgba(255, 82, 193, 0.16);
 
 }
 
@@ -154,64 +154,78 @@ header {
 
 
 
-/*####################### CONTENT #######################*/
+/*####################### MAIN #######################*/
 
 
 main {
-	height: 1900px;
+	height: 1403px;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: space-between;
 	align-items: center;
+	margin-top: 160px;
 }
 
 main>div {
-	width: 1235px;
+	width: 1232px;
 	height: 440px;
 	display: flex;
+	flex-direction: row;
 	align-items: center;
-	justify-content: flex-end;
-	margin-bottom: 35px;
-	border-radius: 12px;
-	box-shadow: 0px 0px 20px -10px grey;
-	padding-right: 30px;
+	justify-content: space-between;
+	border-radius: 16px;
+	box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.07);
+	padding: 0px 29px 0px 109px;
 }
 
-#main-grow {
-	flex-direction: row;
+main p[class='text-header'] {
+	height: 42px;
+	margin-bottom: 16px;
 }
 
-#main-conversations {
-	flex-direction: row;
-}
-
-#main-users {
-	flex-direction: row;
-}
-
-.main-column {
-	width: 500px;
-	margin-left: 100px;
-}
-
-.main-title {
-	font-size: 28px;
-}
-
-.main-description {
-	font-size: 18px;
+main p[class='text-content'] {
 	color: var(--GrayishBlue);
 }
 
-.main-img {
-	width: 420px;
+#grow [class='main-text']{
+	width: 488px;
 }
 
-.main-img-right-size {
+#conversations [class='main-text']{
+	width: 499px;
+}
+
+#users [class='main-text']{
+	width: 477px;
+}
+
+.main-text {
+	height: 139px;
+}
+
+.text-header {
+	font: 600 28px/42px 'Poppins';
+	color: #00252E;
+}
+
+.main-img {
+	width: 440px;
+	height: 440px;
 	text-align: right;
 	display: block;
 }
 
+#grow-img {
+	background: url("../images/illustration-grow-together.svg") center/406px 332px no-repeat;
+}
+
+#conversations-img {
+	background: url("../images/illustration-flowing-conversation.svg") center/417px 297px no-repeat;
+}
+
+#users-img {
+	background: url("../images/illustration-your-users.svg") center/420px 317px no-repeat;
+}
 
 /*####################### FOOTER #######################*/
 
@@ -221,6 +235,7 @@ footer {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
+	margin-top: 344px;
 }
 
 footer>div {
@@ -367,7 +382,7 @@ footer>div {
 
 /*####################### CLASSES FOR GENERAL USE #######################*/
 
-.content-text {
+.text-content {
 	font: 400 18px/27px 'Open Sans';
 }
 
