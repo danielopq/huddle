@@ -11,6 +11,23 @@
 
 /*####################### GENERAL #######################*/
 
+*{
+	box-sizing: border-box;
+}
+
+body {
+	width: 100vw;
+	margin: 0px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+body>* {
+	width: 1440px;
+}
+
 a {
 	text-decoration: none;
 	color: var(--VeryPaleCyan);
@@ -31,113 +48,110 @@ a:hover {
 input[type="button"] {
 	border: none;
 	font: 700 14px 'Open Sans';
-}
-
-input[type="button"]:hover {
 	cursor: pointer;
 }
 
 h1 {
 	padding: 0px;
 	margin: 0px;
+	font: 600 40px/60px 'Poppins';
 }
 
-body {
-	width: 100vw;
+p{
 	margin: 0px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
+	padding: 0px;
 }
 
-body>* {
-	width: 1440px;
-}
 
 /*####################### HEADER #######################*/
 
 header {
-	height: 720px;
+	height: 741px;
 	background: var(--VeryPaleCyan) url("../images/bg-hero-desktop.svg") no-repeat;
-	background-size: auto;
+	padding: 48px 80px 0px;
 }
 
 #top-header {
-	width: 100%;
-	height: 120px;
+	width: 1280px;
+	height: 48px;
 	display: flex;
 	flex-direction: row;
-}
-
-#top-header-logo {
-	width: 50%;
+	align-items: center;
+	justify-content: space-between;
 }
 
 #top-header-logo>img {
 	width: 200px;
-	margin-left: 160px;
-	margin-top: 60px;
 }
 
 #top-header-bt {
-	width: 50%;
-	text-align: right;
+	width: 200px;
 }
 
 #bt-try {
-	width: 200px;
+	width: inherit;
 	height: 50px;
-	margin-top: 50px;
-	margin-right: 80px;
-	border-radius: 25px;
+	border-radius: 24px;
 	color: black;
 	background-color: white;
+	box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.0954);
+
 }
 
 #bt-try:hover {
 	color: var(--GrayishBlue);
 }
 
-#body-header {
-	width: 100%;
-	height: 600px;
+#header-body {
+	width: 1270px;
+	height: 482px;
+	margin-top: 71px;
 	display: flex;
 	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
 }
 
-#body-header-content {
-	width: 50%;
+#header-body >div{
+	height: 482px;
+}
+
+#header-body-content {
+	width: 536px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
 
-#body-header-content-text {
-	width: 530px;
-	height: 300px;
-	margin-top: 100px;
+#header-body-content > div{
+	width: inherit;
 }
 
-#body-header-content-bt {
-	width: 530px;
+#header-body-content-text {
+	height: 233px;
+	margin-top: 86px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+#header-body-getStartedBt{
+	margin-top: 32px;
 }
 
 #getStarted-bt {
 	width: 280px;
-	height: 55px;
-	border-radius: 40px;
-	marging-left: auto;
+	height: 56px;
+	border-radius: 28px;
+	box-shadow: 0px 3px 11px rgba(255,82,193,0.16);
+
 }
 
-#body-header-img {
-	width: 50%;
-}
-
-#body-header-img>img {
+#header-body-img {
 	width: 680px;
-	margin-top: 45px;
+	background: url('../images/illustration-mockups.svg') left/680px 482px;
 }
+
 
 
 /*####################### CONTENT #######################*/
@@ -353,13 +367,8 @@ footer>div {
 
 /*####################### CLASSES FOR GENERAL USE #######################*/
 
-.text-header {
-	font-family: 'Poppins';
-}
-
-.text-main {
-	font-family: 'Open Sans';
-	font-weight: 400;
+.content-text {
+	font: 400 18px/27px 'Open Sans';
 }
 
 .pink-button {
@@ -369,7 +378,6 @@ footer>div {
 
 .pink-button:hover {
 	background-color: hsla(322, 100%, 66%, 0.5);
-	;
 }
 
 /*######################################################################*/
