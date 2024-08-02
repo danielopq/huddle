@@ -287,7 +287,8 @@ footer {
 	background: url("../images/logo-white.svg") center/152px no-repeat;
 }
 
-#footerInfo{
+#footerContent{
+	height: 154px;
 	display: flex;
 	flex-direction: row;
 	align-items: flex-start;
@@ -296,34 +297,43 @@ footer {
 	border: solid 1px red;
 }
 
-#col-one {
+/*------ info ------*/
+
+#info {
 	width: 379px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
-.col-one-row {
+#phone{
+	margin: 16px 0px 16px;
+}
+
+#info > div {
 	display: flex;
 	flex-direction: row;
-	margin-bottom: 25px;
 }
 
-.col-one-icon {
+.info-icon {
 	display: block;
 	margin-top: 3px;
-	width: 25px;
+	width: 24px;
+	height: 24px;
 }
 
-.col-one-text {
+.info-text {
 	width: 360px;
-	font: 400 16px 'Open Sans';
+	font: 400 14px/24px 'Open Sans';
 	color: var(--VeryPaleCyan);
-	margin-left: 15px;
+	margin-left: 16px;
 }
 
+/*------ links ------*/
 
-#col-two {
+#links {
 	width: 230px;
 	height: 154px;
-	border: solid 1px red;
 }
 
 #aboutUs {
@@ -361,11 +371,6 @@ footer {
 	margin-top: 180px;
 	align-self: flex-end;
 	text-align: right;
-}
-
-.col {
-	display: flex;
-	flex-direction: column;
 }
 
 .logo-media {
