@@ -294,7 +294,6 @@ footer {
 	align-items: flex-start;
 	justify-content: flex-start;
 	margin-top: 32px;
-	border: solid 1px red;
 }
 
 /*------ info ------*/
@@ -331,55 +330,62 @@ footer {
 
 /*------ links ------*/
 
-#links {
-	width: 230px;
-	height: 154px;
+#links01 {
+	width: 82px;
+	margin-left: 130px;
 }
 
-#aboutUs {
-	margin-top: 80px;
+#links02 {
+	width: 71px;
+	margin-left: 143px;
 }
 
-#col-three {
-	width: 200px;
-	height: 154px;
+.linksBlock{
+	height: 105px;
 }
 
-#career {
-	margin-top: 80px;
-}
-
-#col-four {
-	width: 370px;
-	height: 154px;
-	display: block;
-	text-align: center;
-}
-
-#media {
+.link {
 	width: inherit;
-	height: 30px;
-	margin-top: 80px;
+	height: 27px;
+	font: 400 14px/27px 'Open Sans';
+	color: var(--VeryPaleCyan);
+	text-align: left;
+	margin-bottom: 12px;
+}
+
+/*------ socialMedia ------*/
+
+#socialMedia {
+	width: 262px;
+	height: 154px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin-left: 169px;
+}
+
+#socialMediaLinks{
+	width: inherit;
+	height: 31px;
 	display: flex;
 	flex-direction: row;
-	justify-content: center;
+	justify-content: flex-start;
 }
 
 #copyRight {
+	height: 18px;
 	font: 400 12px 'Open Sans';
 	color: var(--VeryPaleCyan);
-	margin-top: 180px;
-	align-self: flex-end;
-	text-align: right;
+	text-align: left;
 }
 
 .logo-media {
-	width: 30px;
-	height: 30px;
+	width: 31px;
+	height: 31px;
 	display: block;
 	text-align: center;
-	margin-left: 8px;
-	margin-right: 8px;
+	margin-left: 6px;
+	margin-right: 6px;
 	border: solid 1px var(--VeryPaleCyan);
 	border-radius: 15px;
 }
@@ -391,14 +397,6 @@ footer {
 .logo-media>img {
 	height: 23px;
 	margin-top: 4px;
-}
-
-.link {
-	width: inherit;
-	font: 400 18px 'Open Sans';
-	color: var(--VeryPaleCyan);
-	text-align: center;
-	margin-bottom: 20px;
 }
 
 /*####################### CLASSES FOR GENERAL USE #######################*/
