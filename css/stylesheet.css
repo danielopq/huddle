@@ -169,7 +169,7 @@ main {
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
-	margin-top: 160px;
+	margin-top: 164px;
 }
 
 main>div {
@@ -233,20 +233,7 @@ main p[class='text-content'] {
 	background: url("../images/illustration-your-users.svg") center/420px 317px no-repeat;
 }
 
-/*####################### FOOTER #######################*/
-
-footer {
-	height: 560px;
-	background-color: var(--VeryDarkCyan);
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	margin-top: 344px;
-}
-
-footer>div {
-	margin-top: 190px;
-}
+/*####################### READY TO BUILD #######################*/
 
 #readyToBuild {
 	width: 800px;
@@ -260,8 +247,8 @@ footer>div {
 	color: var(--VeryDarkCyan);
 	box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.07);
 	background-color: white;
-	margin-top: -184px;
 	text-align: center;
+	top: 2442px
 }
 
 #readyToBuild>p {
@@ -274,34 +261,69 @@ footer>div {
 #readyToBuild>[type="button"] {
 	width: 400px;
 	height: 80px;
+	margin-top: 32px;
 	border-radius: 40px;
 	font-size: 20px;
 	line-height: 30px;
 	box-shadow: 0px 6px 13px rgba(0,37,46,0.22);
 }
 
+/*####################### FOOTER #######################*/
+
+footer {
+	height: 418px;
+	background-color: var(--VeryDarkCyan);
+	display: flex;
+	flex-direction: column;
+	align-content: flex-start;
+	justify-content: flex-start;
+	margin-top: 344px;
+	padding: 144px 0px 0px 120px;
+}
+
+#footerLogo {
+	height: 24px;
+	width: 152px;
+	background: url("../images/logo-white.svg") center/152px no-repeat;
+}
+
+#footerInfo{
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	justify-content: flex-start;
+	margin-top: 32px;
+	border: solid 1px red;
+}
 
 #col-one {
-	width: 440px;
+	width: 379px;
 }
 
-#col-one-logo {
-	height: 80px;
-	width: 250px;
+.col-one-row {
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 25px;
 }
 
-@supports (mask: url("")) {
-	#col-one-logo {
-		mask: url("../images/logo.svg");
-		mask-size: 250px;
-		mask-repeat: no-repeat;
-		background: white;
-	}
+.col-one-icon {
+	display: block;
+	margin-top: 3px;
+	width: 25px;
 }
+
+.col-one-text {
+	width: 360px;
+	font: 400 16px 'Open Sans';
+	color: var(--VeryPaleCyan);
+	margin-left: 15px;
+}
+
 
 #col-two {
 	width: 230px;
-	height: 330px;
+	height: 154px;
+	border: solid 1px red;
 }
 
 #aboutUs {
@@ -310,7 +332,7 @@ footer>div {
 
 #col-three {
 	width: 200px;
-	height: 330px;
+	height: 154px;
 }
 
 #career {
@@ -319,7 +341,7 @@ footer>div {
 
 #col-four {
 	width: 370px;
-	height: 330px;
+	height: 154px;
 	display: block;
 	text-align: center;
 }
@@ -344,25 +366,6 @@ footer>div {
 .col {
 	display: flex;
 	flex-direction: column;
-}
-
-.col-one-row {
-	display: flex;
-	flex-direction: row;
-	margin-bottom: 25px;
-}
-
-.col-one-icon {
-	display: block;
-	margin-top: 3px;
-	width: 25px;
-}
-
-.col-one-text {
-	width: 360px;
-	font: 400 16px 'Open Sans';
-	color: var(--VeryPaleCyan);
-	margin-left: 15px;
 }
 
 .logo-media {
