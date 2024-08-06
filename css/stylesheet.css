@@ -522,7 +522,7 @@ footer {
 
 
 	main {
-		height: 1899px;
+		height: 2097px;
 		margin-top: 0px;
 		justify-content: flex-start;
 		padding-top: 112px;
@@ -530,16 +530,17 @@ footer {
 
 	main>div {
 		width: 335px;
-		height: 488px;
+		height: 554px;
 		flex-direction: column-reverse;
+		justify-content: flex-end;
 		padding: 0px;
 		text-align: center;
-		border: solid 1px blue;
+		margin-bottom: 40px;
 	}
 
 	#conversations {
 		flex-direction: column;
-		margin: 40px 0px;
+		justify-content: flex-start;
 	}
 
 	main p[class='text-header'] {
@@ -565,7 +566,7 @@ footer {
 		font: 600 20px/30px 'Poppins';
 	}
 
-	.text-content{
+	.text-content {
 		font: 400 14px/21px 'Open Sans';
 	}
 
@@ -573,7 +574,6 @@ footer {
 		width: 256px;
 		height: 256px;
 		margin: 0px;
-		border: solid 1px green;
 	}
 
 	#grow-img {
@@ -590,191 +590,35 @@ footer {
 
 	.main-text {
 		width: 248px;
-		height: 400px;
-		margin: 0px;
-		border: solid 1px red;
+		margin: 24px 0px 0px;
 	}
 
+	#grow {
+		flex-direction: column-reverse;
+	}
 
-	.main-text p{border: solid 1px red;}
-	/*####################### READY TO BUILD #######################*/
-
-	#readyToBuild {
-		width: 800px;
-		height: 280px;
-		position: absolute;
-		z-index: 100;
-		display: flex;
+	#conversations {
 		flex-direction: column;
-		align-items: center;
-		border-radius: 15px;
-		color: var(--VeryDarkCyan);
-		box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.07);
-		background-color: white;
+	}
+
+	#users {
+		flex-direction: column-reverse;
+	}
+
+	.content-column {
+		width: 340px;
+		margin-left: auto;
+		margin-right: auto;
 		text-align: center;
-		top: 3442px
+		margin-top: 30px;
 	}
 
-	#readyToBuild>p {
-		width: 541px;
-		height: 60px;
-		margin-top: 56px;
-		font: 32px/60px 'Poppins';
+	.content-img {
+		width: 280px;
 	}
 
-	#readyToBuild>[type="button"] {
-		width: 400px;
-		height: 80px;
-		margin-top: 32px;
-		border-radius: 40px;
-		font-size: 20px;
-		line-height: 30px;
-		box-shadow: 0px 6px 13px rgba(0, 37, 46, 0.22);
-	}
-
-	/*####################### FOOTER #######################*/
-
-	footer {
-		height: 418px;
-		background-color: var(--VeryDarkCyan);
-		display: flex;
-		flex-direction: column;
-		align-content: flex-start;
-		justify-content: flex-start;
-		margin-top: 344px;
-		padding: 144px 0px 0px 120px;
-	}
-
-	#footerLogo {
-		height: 24px;
-		width: 152px;
-		background: url("../images/logo-white.svg") center/152px no-repeat;
-	}
-
-	#footerContent {
-		height: 154px;
-		display: flex;
-		flex-direction: row;
-		align-items: flex-start;
-		justify-content: flex-start;
-		margin-top: 32px;
-	}
-
-	/*------ info ------*/
-
-	#info {
-		width: 379px;
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-	}
-
-	#phone {
-		margin: 16px 0px 16px;
-	}
-
-	#info>div {
-		display: flex;
-		flex-direction: row;
-	}
-
-	.info-icon {
-		display: block;
-		margin-top: 3px;
-		width: 24px;
-		height: 24px;
-	}
-
-	.info-text {
-		width: 360px;
-		font: 400 14px/24px 'Open Sans';
-		color: var(--VeryPaleCyan);
-		margin-left: 16px;
-	}
-
-	/*------ links ------*/
-
-	#links01 {
-		width: 82px;
-		margin-left: 130px;
-	}
-
-	#links02 {
-		width: 71px;
-		margin-left: 143px;
-	}
-
-	.linksBlock {
-		height: 105px;
-	}
-
-	.link {
-		width: inherit;
-		height: 27px;
-		font: 400 14px/27px 'Open Sans';
-		color: var(--VeryPaleCyan);
-		text-align: left;
-		margin-bottom: 12px;
-	}
-
-	/*------ socialMedia ------*/
-
-	#socialMedia {
-		width: 262px;
-		height: 154px;
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-		margin-left: 169px;
-	}
-
-	#socialMediaLinks {
-		width: inherit;
-		height: 31px;
-		display: flex;
-		flex-direction: row;
-		justify-content: flex-start;
-	}
-
-	#copyRight {
-		height: 18px;
-		font: 400 12px 'Open Sans';
-		color: var(--VeryPaleCyan);
-		text-align: left;
-	}
-
-	.logo-media {
-		width: 31px;
-		height: 31px;
-		display: block;
+	.content-img-right-size {
 		text-align: center;
-		margin-left: 6px;
-		margin-right: 6px;
-		border: solid 1px var(--VeryPaleCyan);
-		border-radius: 15px;
 	}
 
-	.logo-media:hover {
-		cursor: pointer;
-	}
-
-	.logo-media>img {
-		height: 23px;
-		margin-top: 4px;
-	}
-
-	/*####################### CLASSES FOR GENERAL USE #######################*/
-
-	.text-content {
-		font: 400 18px/27px 'Open Sans';
-	}
-
-	.pink-button {
-		background-color: var(--Pink);
-		color: white;
-	}
-
-	.pink-button:hover {
-		background-color: hsla(322, 100%, 66%, 0.5);
-	}
 }
