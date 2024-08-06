@@ -214,6 +214,10 @@ main p[class='text-content'] {
 	color: #00252E;
 }
 
+.text-content{
+	margin-top: 16px;
+}
+
 .main-img {
 	width: 440px;
 	height: 440px;
@@ -222,15 +226,15 @@ main p[class='text-content'] {
 }
 
 #grow-img {
-	background: url("../images/illustration-grow-together.svg") center/406px 332px no-repeat;
+	background: url("../images/illustration-grow-together.svg") center/440px no-repeat;
 }
 
 #conversations-img {
-	background: url("../images/illustration-flowing-conversation.svg") center/417px 297px no-repeat;
+	background: url("../images/illustration-flowing-conversation.svg") center/440px no-repeat;
 }
 
 #users-img {
-	background: url("../images/illustration-your-users.svg") center/420px 317px no-repeat;
+	background: url("../images/illustration-your-users.svg") center/440px no-repeat;
 }
 
 /*####################### READY TO BUILD #######################*/
@@ -279,6 +283,9 @@ footer {
 	justify-content: flex-start;
 	margin-top: 344px;
 	padding: 144px 0px 0px 120px;
+}
+
+footer > *{
 }
 
 #footerLogo {
