@@ -215,6 +215,7 @@ main p[class='text-content'] {
 }
 
 .text-content {
+	font: 400 18px/27px 'Open Sans';
 	margin-top: 16px;
 }
 
@@ -327,7 +328,7 @@ footer {
 
 .info-text {
 	width: 360px;
-	font: 400 14px/24px 'Open Sans';
+	font: 400 18px/27px 'Open Sans';
 	color: var(--VeryPaleCyan);
 	margin-left: 16px;
 }
@@ -405,9 +406,6 @@ footer {
 
 /*####################### CLASSES FOR GENERAL USE #######################*/
 
-.text-content {
-	font: 400 18px/27px 'Open Sans';
-}
 
 .pink-button {
 	background-color: var(--Pink);
@@ -526,6 +524,7 @@ footer {
 		margin-top: 0px;
 		justify-content: flex-start;
 		padding-top: 112px;
+		border: solid 1px red;
 	}
 
 	main>div {
@@ -649,139 +648,47 @@ footer {
 /*####################### FOOTER #######################*/
 
 footer {
-	height: 418px;
-	background-color: var(--VeryDarkCyan);
-	display: flex;
-	flex-direction: column;
-	align-content: flex-start;
-	justify-content: flex-start;
+	height: 785px;
+	width: 100vw;
 	margin-top: 0px;
-	padding: 144px 0px 0px 120px;
-}
-
-#footerLogo {
-	height: 24px;
-	width: 152px;
-	background: url("../images/logo-white.svg") center/152px no-repeat;
+	padding: 144px 16px 16px 16px;
 }
 
 #footerContent {
-	height: 154px;
-	display: flex;
-	flex-direction: row;
+	width: 100%;
+	height: 100%;
+	flex-direction: column;
 	align-items: flex-start;
 	justify-content: flex-start;
 	margin-top: 32px;
 }
 
-/*------ info ------*/
-
-#info {
-	width: 379px;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-}
-
-#phone {
-	margin: 16px 0px 16px;
-}
-
-#info>div {
-	display: flex;
-	flex-direction: row;
-}
-
-.info-icon {
-	display: block;
-	margin-top: 3px;
-	width: 24px;
-	height: 24px;
-}
-
-.info-text {
-	width: 360px;
-	font: 400 14px/24px 'Open Sans';
-	color: var(--VeryPaleCyan);
-	margin-left: 16px;
-}
-
 /*------ links ------*/
 
 #links01 {
-	width: 82px;
-	margin-left: 130px;
+	margin: 41px 0px 0px;
 }
 
 #links02 {
-	width: 71px;
-	margin-left: 143px;
+	margin: 10px 0px 0px;
 }
 
-.linksBlock {
-	height: 105px;
-}
-
-.link {
-	width: inherit;
-	height: 27px;
-	font: 400 14px/27px 'Open Sans';
-	color: var(--VeryPaleCyan);
-	text-align: left;
-	margin-bottom: 12px;
-}
 
 /*------ socialMedia ------*/
 
 #socialMedia {
-	width: 262px;
-	height: 154px;
-	display: flex;
-	flex-direction: column;
+	width: inherit;
+	height: 72px;
+	align-items: center;
 	justify-content: space-between;
-	margin-left: 169px;
+	margin: 24px 0px 0px 0px;
 }
 
 #socialMediaLinks {
-	width: inherit;
-	height: 31px;
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-start;
-}
-
-#copyRight {
-	height: 18px;
-	font: 400 12px 'Open Sans';
-	color: var(--VeryPaleCyan);
-	text-align: left;
-}
-
-.logo-media {
-	width: 31px;
-	height: 31px;
-	display: block;
-	text-align: center;
-	margin-left: 6px;
-	margin-right: 6px;
-	border: solid 1px var(--VeryPaleCyan);
-	border-radius: 15px;
-}
-
-.logo-media:hover {
-	cursor: pointer;
-}
-
-.logo-media>img {
-	height: 23px;
-	margin-top: 4px;
+	justify-content: center;
 }
 
 /*####################### CLASSES FOR GENERAL USE #######################*/
-
-.text-content {
-	font: 400 18px/27px 'Open Sans';
-}
 
 .pink-button {
 	background-color: var(--Pink);
